@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Link Scanner</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Link Scanner</h1>
+        <form action="/check" method="post">
+            <input type="text" name="url" placeholder="Enter URL to scan" required>
+            <button type="submit">Check URL</button>
+        </form>
+        {% if result is not none %}
+            <div class="result {{ 'suspicious' if result else 'safe' }}">
+                {{ message }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
