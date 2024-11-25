@@ -1,22 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    max-width: 600px;
-    margin: 100px auto;
-    text-align: center;
-    background: #fff;
+    font-family: Arial, sans-serif;
+    background: none;
+    background-image: url("/static/bgpls.jpg"); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Sets the height to the viewport height */
+  }
+  
+  .container {
+    background: rgba(244, 250, 247, 0.8); /* Add a white, semi-transparent background for contrast */
     padding: 20px;
     border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  }
 
+  .para{
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+  }
+  
 h1 {
     color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 form {
