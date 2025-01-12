@@ -10,8 +10,8 @@ def extract_url_features(url):
         parsed_url = urlparse(url)
         features = {
             "length": len(url),
-            "special_chars": len(re.findall(r"[!@#$%^&*()_+=<>?;]", url)),
-            "subdomain_count": len(parsed_url.netloc.split('.')) - 2,
+            "special_chars": len(re.findall(r"[!@#$%^&*()_+=<>?;]", url)), """Calculates the length of the list of matches, which is the count of special characters found in the URL."""
+            "subdomain_count": len(parsed_url.netloc.split('.')) - 2,  
             "has_at_symbol": "@" in url,
             "suspicious_words": check_suspicious_words(url),
         }
